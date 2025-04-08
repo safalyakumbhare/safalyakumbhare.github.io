@@ -2,190 +2,306 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Safalya Kumbhare - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
-      <i class="fa-solid fa-bars" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Safalya Kumbhare</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/img.png" alt="Safalya Kumbhare profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Safalya Kumbhare</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/safalya-kumbhare/">
+            <i class="fa-brands fa-linkedin font-icon"></i>
+          </a>
+          <a href="https://github.com/safalyakumbhare">
+            <i class="fa-brands fa-github font-icon"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fa-solid fa-medal font-icon"></i>
+              <h3>Experience</h3>
+              <p>6 months <br />PHP Developer</p>
+            </div>
+            <div class="details-container">
+              <i class="fa-solid fa-school font-icon"></i>
+              <h3>Education</h3>
+              <p>BCCA. Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              My journey in web development is driven by a deep-seated passion
+              for technology and innovation. I am committed to staying at the
+              forefront of industry trends and continuously expanding my skill
+              set. Whether I am working independently or as part of a team, I
+              strive to deliver high-quality solutions that meet client needs
+              and exceed expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+               <i class="fa-solid fa-circle-check font-icon"></i>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+               <i class="fa-solid fa-circle-check font-icon"></i>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+               <i class="fa-solid fa-circle-check font-icon"></i>
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+               <i class="fa-solid fa-circle-check font-icon"></i>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+               <i class="fa-solid fa-circle-check font-icon"></i>
+                <div>
+                  <h3>Jquery</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+               <i class="fa-solid fa-circle-check font-icon"></i>
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+               <i class="fa-solid fa-circle-check font-icon"></i>
+                <div>
+                  <h3>PHP</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+               <i class="fa-solid fa-circle-check font-icon"></i>
+                <div>
+                  <h3>Laravel</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Screenshot 2025-01-28 115132.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Travel Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/safalyakumbhare/Tourista.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://safalyakumbhare.github.io/Tourista/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Login Pets Portal.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Pets Care Portal</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/safalyakumbhare/Pet_Portal-main.git'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Screenshot 2024-12-14 210045.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Event Manager</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/safalyakumbhare/Acedemic-Event-Manager-main.git'"
+              >
+                Github
+              </button>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fa-solid fa-envelope font-icon"></i>
+          <p>
+            <a href="mailto:safalyakumbhare@gmail.com"
+              >safalyakumbhare@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-linkedin font-icon"></i>
+          <p>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/safalya-kumbhare"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-    </header>
-
-    <section class="home" id="home">
-      <div class="home-content">
-        <div class="text-content">
-          <h3>Hello world!</h3>
-          <h3>Welcome to my portfolio!</h3>
-          <h1>I'm Safalya Kumbhare</h1>
-          <h3><span class="multiple-text"></span></h3>
-          <p>
-            I’m a passionate web developer with solid skills in HTML, CSS, and a
-            working knowledge of JavaScript. I leverage frameworks like
-            Bootstrap and jQuery to create responsive and interactive web
-            experiences. My expertise extends to backend development, where I
-            excel in PHP, seamlessly connecting dynamic websites to MySQL
-            databases. To enhance my productivity, I utilize AI tools like
-            GitHub Copilot, Blackbox AI, and various other development tools.
-          </p>
-          <div class="social-media">
-            <a href="https://github.com/safalyakumbhare"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <!-- <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a> -->
-            <a href="https://www.linkedin.com/in/safalya-kumbhare-4b5a9027b/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </div>
-          <!-- <a href="#" class="btn">Download CV</a> -->
-        </div>
-        <div class="home-img">
-          <img src="img.png" alt="Profile Picture" />
-        </div>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="abt.jpeg" alt="About Me" />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Full Stack Web Developer</h3>
-        <p>
-          My journey in web development is driven by a deep-seated passion for
-          technology and innovation. I am committed to staying at the forefront
-          of industry trends and continuously expanding my skill set. Whether I
-          am working independently or as part of a team, I strive to deliver
-          high-quality solutions that meet client needs and exceed
-          expectations.<br />
-          <br />
-          I invite you to explore my portfolio to see examples of my work and
-          learn more about my projects. Let's connect and discuss how we can
-          collaborate to create something amazing together!
-        </p>
-        <!-- <a href="#" class="btn">Read more</a> -->
-      </div>
-    </section>
-
-    <section class="services" id="services">
-      <h2 class="heading">My <span>Skills</span></h2>
-
-      <div class="services-container">
-        <div class="services-box">
-          <i class="fa-solid fa-code"></i>
-          <h3>Front-End Development</h3>
-          <p>
-            I use HTML, CSS, and JavaScript to create visually appealing and
-            highly interactive user interfaces. My designs are responsive,
-            ensuring a seamless experience across all devices.
-          </p>
-          <!-- <a href="" class="btn">Read more</a> -->
-        </div>
-
-        <div class="services-box">
-          <i class="fa-solid fa-server"></i>
-          <h3>Backend Development</h3>
-          <p>
-            With expertise in PHP, I build robust server-side applications. I
-            manage and optimize MySQL databases to ensure data integrity,
-            security, and efficiency.
-          </p>
-          <!-- <a href="" class="btn">Read more</a> -->
-        </div>
-
-        <div class="services-box">
-          <i class="fa-solid fa-database"></i>
-          <h3>Database Management</h3>
-          <p>
-            I have extensive experience with MySQL databases. I ensure that data
-            handling and storage are performed efficiently and securely,
-            supporting the overall performance of web applications.
-          </p>
-          <!-- <a href="" class="btn">Read more</a> -->
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio" id="projects">
-      <h2 class="heading">Latest <span>Project</span></h2>
-      <a
-        href="#"
-        target="_blank"
-      >
-        <div class="portfolio-container">
-          <div class="portfolio-box">
-            <img src="Netflix_Logo_RGB-512.jpg" alt="" />
-            <div class="portfolio-layer">
-              <h4>Netflix Landing Page Clone</h4>
-              <p>
-                Developed a Netflix landing page clone using HTML, CSS, and
-                jQuery to showcase my front-end skills as a web developer.
-              </p>
-              <i class="fa-solid fa-up-right-from-square"></i>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a
-        href="#"
-        target="_blank"
-      >
-        <div class="portfolio-container">
-          <div class="portfolio-box">
-            <img src="Netflix_Logo_RGB-512.jpg" alt="" />
-            <div class="portfolio-layer">
-              <h4>Netflix Landing Page Clone</h4>
-              <p>
-                Developed a Netflix landing page clone using HTML, CSS, and
-                jQuery to showcase my front-end skills as a web developer.
-              </p>
-              <i class="fa-solid fa-up-right-from-square"></i>
-            </div>
-          </div>
-        </div>
-      </a>
-    </section>
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-
-      <form action="">
-        <div class="input-box">
-          <input type="text" name="fname" placeholder="Full Name" />
-          <input type="email" name="email" placeholder="Email Address" />
-        </div>
-        <div class="input-box">
-          <input type="number" name="mnum" placeholder="Mobile Number" />
-          <input type="text" name="emailsub" placeholder="Email Subject" />
-        </div>
-        <textarea
-          name="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
-    </section>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
